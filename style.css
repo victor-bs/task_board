@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background: rgb(55, 55, 134);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 0px 10px 3px;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+}
+.login, .signup {
+    position: relative;
+    max-width: 500px;
+    max-height: 600px;
+    width: 80%;
+    height: 65vh;
+    margin: calc(50vh - 25px) 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 3px;
+    overflow: hidden;
+}
+.login .l_h, .signup .s_h {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.l_b, .s_b {
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+.s_b {
+    margin: 25px 0 0 0;
+}
+.l_b input, .s_b input {
+    width: 60%;
+    height: 30px;
+    margin: 10px 50%;
+    transform: translate(-50%,0);
+    color: white;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.274);
+    border-style: none;
+    border-bottom: 1px solid green;
+}
+.l_b input:focus, .l_b button:focus,
+.s_b input:focus, .s_b button:focus {
+    outline: none;
+}
+.l_b button, .s_b button {
+    width: 90px;
+    height: 30px;
+    margin: 20px 50%;
+    transform: translate(-50%,0);
+    background: rgba(0, 0, 0, 0.274);
+    border-style: none;
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.l_b p{
+    text-align: center;
+    color: white;
+}
+.s_b p{
+    text-align: center;
+    color: white;
+}
+.l_b p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.s_b p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.header h1 {
+    font-family: monospace;
+    line-height: 50px;
+    padding: 0 25px;
+    width: calc(100% - 110px);
+}
+.menu {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+    background: black;
+    border-radius: 50%;overflow: hidden;
+}
+.menu img, .profile img {
+    width: 100%;
+    height: 100%;
+}
+.menu_div {
+    position: fixed;
+    width: 50%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.705);
+    max-width: 150px;
+    overflow: hidden;
+    top: 60px;
+    right: 20px;
+    border-radius: 15px;
+    display: none;
+    box-shadow: 0px 0px 5px 2px;
+}
+.menu_div .profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: red;
+    margin: 20px 0 0 50%;
+    transform: translate(-50%, 0px);
+    overflow: hidden;
+}
+.menu_div .logout {
+    width: 90px;
+    height: 30px;
+    margin: 30px 0 0 50%;
+    transform: translate(-50%, 0px);
+    border-radius: 10px;
+    border: 2px solid green;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+.addlist {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: black;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.addlist_a {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000069;
+    display: none;
+    z-index: 99;
+}
+.addlist_a1 {
+    width: 70%;
+    height: 100px;
+    max-width: 350px;
+    background: white;
+    margin: 50vh 50%;
+    transform: translate(-50%, -50%)
+}
+.addlist_close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 18px;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.addlist_entry {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 0 0;
+}
+.addlist_entry input {
+    width: 60%;
+    height: 30px;
+    margin: 10px 0 0 15px;
+    padding: 0 10px;
+    color: black;
+    box-shadow: none;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.addlist_entry input:focus {
+    outline: none;
+}
+.list_btn {
+    width: calc(40% - 65px);
+    height: 30px;
+    margin: 0 0 0 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.list_btn:focus {
+    outline: none;
+}
+.list_btn:hover {
+    background: rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+}
+.body {
+    width: 100%;
+    background: rgba(0, 0, 255, 0.527);
+    margin: 30px 0 0 0;
+}
+.list {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0 0 20px;
+    float: left;
+    background: #ffffff9e;
+}
+.list h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-family: sans-serif;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+}
+.list button {
+    width: 90px;
+    height: 30px;
+    margin: 10px 0 15px 50%;
+    transform: translate(-50%,0);
+    background: rgb(255 255 255 / 31%);
+    border-style: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.list button:focus {
+    outline: none;
+}
+.list button:hover {
+    background: #8e8e8e6e;
+    cursor: pointer;
+    transition: 1s;
+}
+.list button span {
+    display: none;
+}
+.list .task {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+.task h3 {
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.info, .info_t {
+    display: none;
+}
+
+.list i {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: -23px 0 0 171px;
+}
+.task i {
+    margin: -28px 0 0 171px;
+}
+.tvalue {
+    height: 50px;
+    text-align: center;
+}
+.tdate {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.taskc {
+    height: 130px !important;
+    transition: 1s;
+}
+
+
+
+/*  */
+.addtask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000069;
+    display: none;
+    z-index: 99;
+}
+.addtask_a1 {
+    width: 70%;
+    height: 220px;
+    max-width: 350px;
+    background: white;
+    margin: 50vh 50%;
+    transform: translate(-50%, -50%)
+}
+.addtask_close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 18px;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.addtask_entry {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 0 0;
+}
+.addtask_entry input {
+    width: 60%;
+    height: 30px;
+    margin: 10px 0 0 15px;
+    padding: 0 10px;
+    color: black;
+    box-shadow: none;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.addtask_entry input:focus {
+    outline: none;
+}
+.task_btn {
+    width: calc(40% - 65px);
+    height: 30px;
+    margin: 0 0 0 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.task_btn:focus {
+    outline: none;
+}
+.task_btn:hover {
+    background: rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+}

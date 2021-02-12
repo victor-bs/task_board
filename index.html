@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Task Board</h1>
+        </div>
+        <div class="login">
+            <div class="l_h">Login</div>
+            <div class="l_b">
+                <form id="lform" action="" onsubmit="login()">
+                    <input type="email" id="lemail" placeholder="Enter Your Email" required><br>
+                    <input type="password" id="lpass" placeholder="PassWord" required><br>
+                    <button type="submit">Submit</button>
+                </form>
+                <p>don't have account <span class="l_s">signup</span></p>
+            </div>
+        </div>
+        <div class="signup">
+            <div class="s_h">Sign Up</div>
+            <div class="s_b">
+                <form action="index.html" onsubmit="signup()">
+                    <input type="text" id="name" placeholder="Enter Your Name" required><br>
+                    <input type="email" id="email" placeholder="Enter Your Email" required><br>
+                    <input type="password" id="pass" placeholder="PassWord" required><br>
+                    <button type="submit">Submit</button>
+                </form>
+                <p>have a account <span class="s_s">login</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

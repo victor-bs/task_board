@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <!-- Fixed -->
+        <div class="addlist_a">
+            <div class="addlist_a1">
+                <div class="addlist_close">X</div><br>
+                <div class="addlist_entry">
+                    <input type="text" id="list_name" placeholder="New List">
+                    <button class="list_btn">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="addtask">
+            <div class="addtask_a1">
+                <div class="addtask_close">X</div><br>
+                <div class="addtask_entry">
+                    <input type="text" id="task_name" placeholder="Task Name">
+                    <input type="text" id="task_value" placeholder="Description">
+                    <input type="date" id="task_date" placeholder="date">
+                    <button class="task_btn">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Main -->
+        <div class="header">
+            <h1>Task Board</h1>
+            <div class="menu"><img src="image/userphoto.jpeg"></div>
+            <div class="menu_div">
+                <div class="profile"><img src="image/userphoto.jpeg"></div>
+                <div class="logout"><a href="index.html">Logout</a></div>
+            </div>
+        </div>
+
+        <div class="body">
+            
+        </div>  
+
+        <div class="addlist">+</div>
+        
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
